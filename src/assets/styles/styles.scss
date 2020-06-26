@@ -1,0 +1,35 @@
+@import "variables";
+@import "normalize";
+@import "mixins";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.btn{
+  background: #fdfdfd;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  color: #363732;
+  padding: 0.5em;
+  text-decoration: none;
+  .ico{
+    display: inline-block;
+    height: 16px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    width: 16px;
+  }
+  &:hover, &.active{
+    background: #359435;
+    border: 1px solid #359435;
+    color: #fff;
+  }
+}
